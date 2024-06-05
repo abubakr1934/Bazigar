@@ -1,0 +1,70 @@
+
+  
+body, :root {
+  font-family: 'Century Gothic', 'Arial', sans-serif !important;
+}
+
+
+.nav-link{
+  color:white !important;
+  
+  
+}
+.nav-link:hover{
+  
+  text-decoration: underline #fbb627 2px !important;
+  
+  
+}
+.container {
+  padding: 0 15px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.accordion-button{
+  background-color: #060606 !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+.accordian-body,accordian-collapse {
+  background-color: #2c2525  !important;
+  border-radius: 10px !important;
+} 
+.grey-background {
+  background-color: #656565 !important;
+
+  border: 1px solid #f9cc26;
+  
+  border-radius: 10px !important;
+} 
+
+.owl-carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.owl-carousel .item {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between items as needed */
+}
+
+/* Adjust width of items if needed */
+.owl-carousel .item img {
+  width: 200px; /* Adjust width as needed */
+}
