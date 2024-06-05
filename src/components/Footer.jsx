@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import './Footer.css'
 function Footer() {
   return (
     <>
@@ -137,10 +138,22 @@ function Footer() {
             </div>
         </div>
     </div>
-    <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 ">
-    <p>© 2024 Company, Inc. All rights reserved.</p>
-    
-  </div>
+    <div className="d-flex flex-column flex-sm-row justify-content-center py-4 my-4" style={{ backgroundColor: "#0f1b23" }}>
+  <p>© 2024 Bazigar. All rights reserved. <a className="hover-text" href=""><span className="hover-text">Upsports Vision Private Limited.</span></a></p>
+</div>
+<div class="outer-container">
+            <div class="inner-container" id="player">
+                <div class="pacman"></div>
+                <marquee>
+                    Players from
+                    Andhra Pradesh, Meghalaya, Nagaland, Sikkim and Telangana
+                    are not allowed to play online
+                    games for prizes.
+                    
+                </marquee>
+            </div>
+        </div>
+
   </>
   )
 }

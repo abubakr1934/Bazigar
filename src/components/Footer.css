@@ -1,0 +1,10 @@
+
+.hover-text {
+    color: white;
+    text-decoration: none !important;
+  }
+  
+  .hover-text:hover {
+    color: #f6ad02; 
+  }
+  

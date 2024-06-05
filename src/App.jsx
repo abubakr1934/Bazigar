@@ -7,12 +7,15 @@ import Header from './components/Header';
 import Temp from './components/Temp';
 import Accordian from './components/Accordian';
 import Footer from './components/Footer';
+import VideoPlay from './components/VideoPlay';
 function App() {
   return (
   <>
   <Header></Header>
   <Temp></Temp>
+  <VideoPlay></VideoPlay>
   <Footer></Footer>
+  
   </>
 
   );
