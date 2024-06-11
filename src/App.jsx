@@ -9,18 +9,12 @@ import Accordian from './components/Accordian';
 import Footer from './components/Footer';
 import VideoPlay from './components/VideoPlay';
 import Clock from './components/Clock';
+import Testimonial from './components/Testimonial';
 import FlowingIcons from './components/FlowingIcons';
 function App() {
   return (
   <>
-  <Header></Header>
-  <Temp></Temp>
-  <FlowingIcons></FlowingIcons>
-  <VideoPlay></VideoPlay>
-  <Clock></Clock>
-  <Accordian></Accordian>
-  <Footer></Footer>
-  
+  <Testimonial></Testimonial>
   
   </>
 

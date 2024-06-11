@@ -97,3 +97,56 @@ body, :root {
   
 }
 
+#customer-testimonoals {
+  margin-top: 6%;
+}
+
+#customer-testimonoals .item {
+  text-align: center;
+  margin-bottom: 0px;
+  opacity: 0.2;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+#customer-testimonoals .owl-item.active.center .item {
+  opacity: 1;
+  transform: scale3d(1.0, 1.0, 1);
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #56423D;
+  transform: translate3d(0px, -50%, 0px) scale(0.8);
+}
+
+.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+}
+
+.testimonial-name {
+  display: none;
+}
+
+.owl-item.active.center .testimonial-name {
+  display: block;
+}
+
+.selected-testimonial-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.description {
+  width: 80%; /* Increase the width */
+  margin: 0 auto; /* Center the paragraph */
+  text-align: center; /* Ensure the text is centered */
+  padding: 10px; /* Add padding for better readability */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}

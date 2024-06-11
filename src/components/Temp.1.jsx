@@ -1,8 +1,8 @@
 import React from 'react';
-import image1 from '../../public/assets/image1.png';
-import image2 from '../../public/assets/image2.png';
-import image3 from '../../public/assets/image3.png';
-import image4 from '../../public/assets/image4.png';
+import image1 from '../../public/assets/image11.png';
+import image2 from '../../public/assets/image22.png';
+import image3 from '../../public/assets/image33.png';
+import image4 from '../../public/assets/image44.png';
 export function Temp() {
   return (
     <div className="container d-flex flex-column flex-md-row align-items-center justify-content-start my-5">
@@ -17,7 +17,7 @@ export function Temp() {
               <p className="getlink-text color-primary small mb-1">
                 Enter Mobile Number To Receive Download Link
               </p>
-              <div className="input-group mb-2" style={{ maxWidth: "310px" }}>
+              <div className="input-group mb-2 d-flex justify-content-start col-md-12" style={{ maxWidth: "310px" }}>
                 <input
                   type="text"
                   className="form-control getlink-input px-3 mobile_number"
@@ -68,7 +68,7 @@ export function Temp() {
           </div>
         </div>
       </div>
-      <div className="carousel-container col-12 col-md-6 col-lg-7 text-center text-md-start">
+      <div className="carousel-container col-12 col-md-6 col-lg-7 text-center text-md-start" style={{maxWidth:"auto"}}>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" style={{ width: "650px", height: "300px", borderRadius: "20px" }}>
           <div className="carousel-inner">
             <div className="carousel-item active">
