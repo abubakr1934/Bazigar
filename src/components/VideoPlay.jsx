@@ -16,7 +16,7 @@ function ResponsiveVideo() {
             <a href="https://bazigar.in/#lg=1&slide=0" target="_blank" rel="noopener noreferrer">
               <button 
                 className="btn  position-absolute top-50 start-50 translate-middle"
-                style={{ width: '80px', height: '80px', borderRadius: '50%', fontSize: '24px',backgroundColor:"#d3cec3",opacity:"50%",borderColor:"white",BORDER }}
+                style={{ width: '80px', height: '80px', borderRadius: '50%', fontSize: '24px',backgroundColor:"#d3cec3",opacity:"50%",borderColor:"white" }}
               >
                 ▶
               </button>

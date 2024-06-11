@@ -68,3 +68,32 @@ body, :root {
 .owl-carousel .item img {
   width: 200px; /* Adjust width as needed */
 }
+.servicebox--1 {
+  position: relative;
+}
+
+.dropdown-text {
+  margin-top: 25px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 140px; 
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  transition: opacity 0.3s ease, transform 1.5s ease, visibility 1.5s;
+  width: 170px;
+  background-color: #115a21;
+  color: white; 
+  padding: 10px;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.servicebox--1:hover .dropdown-text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  top: 140px; 
+  
+}
+
