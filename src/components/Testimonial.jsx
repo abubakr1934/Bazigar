@@ -64,7 +64,7 @@ function Testimonial({setInitialString}) {
           dots: true,
           autoplayTimeout: 8500,
           smartSpeed: 450,
-          nav: true,
+          
           responsive: {
             0: {
               items: 1,
@@ -79,6 +79,9 @@ function Testimonial({setInitialString}) {
         };
         return (
             <section id="testimonial" className="testimonials pt-70 pb-70">
+              <div class="section-title">
+                <h2>Tournaments</h2>
+            </div>
               
                 <div className="row">
                   <div className="col-md-12">

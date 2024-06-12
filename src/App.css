@@ -104,7 +104,7 @@ body, :root {
 #customer-testimonoals .item {
   text-align: center;
   margin-bottom: 0px;
-  opacity: 0.2;
+  opacity: 0.5;
   transform: scale3d(0.8, 0.8, 1);
   transition: all 0.3s ease-in-out;
   cursor: pointer; /* Add cursor pointer for better UX */

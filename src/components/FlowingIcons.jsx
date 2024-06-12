@@ -1,5 +1,45 @@
 import React from 'react';
 import '../../src/App.css'
+
+const iconData = [
+  {
+    imgSrc: 'https://bazigar.in/assets/website/images/home-page/real-player.gif',
+    altText: 'Real Player',
+    description: 'Why play with bots when you can have your own community of verified players? On Bazigar, play real-time tournaments while keeping your game spirit burning.',
+    title: 'Real Player'
+  },
+  {
+    imgSrc: 'https://bazigar.in/assets/website/images/home-page/instant-cash-withdrawals.gif',
+    altText: 'Instant Cash Withdrawls',
+    description: 'Withdraw the cash that you win immediately with a few simple steps.',
+    title: 'Instant Cash Withdrawls'
+  },
+  {
+    imgSrc: 'https://bazigar.in/assets/website/images/home-page/interactive-gaming-communities.gif',
+    altText: 'Interactive Gaming Community',
+    description: 'Dive into one-on-one combat fun on Baazigar.in. Conquer challenges with players nearby. Let the gaming bonanza begin!',
+    title: 'Interactive Gaming Community'
+  },
+  {
+    imgSrc: 'https://bazigar.in/assets/website/images/home-page/customer-support.gif',
+    altText: '24*7 Customer Support',
+    description: 'Our support team is always available. We are here to turn frowns into smiles whenever you need help!',
+    title: '24*7 Customer Support'
+  },
+  {
+    imgSrc: 'https://bazigar.in/assets/website/images/home-page/winning.gif',
+    altText: 'Winnings',
+    description: 'Get a chance to win 5x in 5mins. Get in the game now!',
+    title: 'Winnings'
+  },
+  {
+    imgSrc: 'https://bazigar.in/assets/website/images/home-page/tds.gif',
+    altText: '0% TDS',
+    description: 'With 0% TDS deductions on Bazigar, claim 100% winning money into your bank account.',
+    title: '0% TDS'
+  }
+];
+
 function FlowingIcons() {
   return (
     <div className="container">
@@ -12,60 +52,17 @@ function FlowingIcons() {
       </div>
 
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-6 justify-content-between align-items-start">
-        <div className="col">
-          <div className="servicebox--1">
-            <div className="why-bazigar-image">
-              <img src="https://bazigar.in/assets/website/images/home-page/real-player.gif" alt="" style={{ width: '100px', height: '100px' }} />
-              <p>Real Player</p>
+        {iconData.map((icon, index) => (
+          <div className="col" key={index}>
+            <div className="servicebox--1">
+              <div className="why-bazigar-image">
+                <img src={icon.imgSrc} alt={icon.altText} style={{ width: '100px', height: '100px' }} />
+                <p>{icon.title}</p>
+              </div>
+              <div className="dropdown-text">{icon.description}</div>
             </div>
-            <div className="dropdown-text">Why play with bots when you can have your own community of verified players? On Bazigar, play real-time tournaments while keeping your game spirit burning.</div>
           </div>
-        </div>
-        <div className="col">
-          <div className="servicebox--1">
-            <div className="why-bazigar-image">
-              <img src="https://bazigar.in/assets/website/images/home-page/instant-cash-withdrawals.gif" alt="" style={{ width: '100px', height: '100px' }} />
-              <p>Instant Cash Withdrawls</p>
-            </div>
-            <div className="dropdown-text">Withdraw the cash that you win immediately with a few simple steps.</div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="servicebox--1">
-            <div className="why-bazigar-image">
-              <img src="https://bazigar.in/assets/website/images/home-page/interactive-gaming-communities.gif" alt="" style={{ width: '100px', height: '100px' }} />
-              <p>Interactive Gaming Community</p>
-            </div>
-            <div className="dropdown-text">Dive into one-on-one combat fun on Baazigar.in. Conquer challenges with players nearby. Let the gaming bonanza begin!</div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="servicebox--1">
-            <div className="why-bazigar-image">
-              <img src="https://bazigar.in/assets/website/images/home-page/customer-support.gif" alt="" style={{ width: '100px', height: '100px' }} />
-              <p>24*7 Customer Support</p>
-            </div>
-            <div className="dropdown-text">Our support team is always available. We are here to turn frowns into smiles whenever you need help!</div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="servicebox--1">
-            <div className="why-bazigar-image">
-              <img src="https://bazigar.in/assets/website/images/home-page/winning.gif" alt="" style={{ width: '100px', height: '100px' }} />
-              <p>Winnings</p>
-            </div>
-            <div className="dropdown-text">Get a chance to win 5x in 5mins. Get in the game now!</div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="servicebox--1">
-            <div className="why-bazigar-image">
-              <img src="https://bazigar.in/assets/website/images/home-page/tds.gif" alt="" style={{ width: '100px', height: '100px' }} />
-              <p>0% TDS</p>
-            </div>
-            <div className="dropdown-text">With 0% TDS deductions on Bazigar, claim 100% winning money into your bank account.</div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

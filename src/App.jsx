@@ -14,7 +14,14 @@ import FlowingIcons from './components/FlowingIcons';
 function App() {
   return (
   <>
+  <Header></Header>
+  <Temp></Temp>
   <Testimonial></Testimonial>
+  <FlowingIcons></FlowingIcons>
+  <VideoPlay></VideoPlay>
+  <Clock></Clock>
+  <Accordian></Accordian>
+  <Footer></Footer>
   
   </>
 

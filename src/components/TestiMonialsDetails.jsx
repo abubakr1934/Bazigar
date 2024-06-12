@@ -5,12 +5,12 @@ const TestiMonialsDetails = ({ testiMonialDetail }) => {
   return (
     <div className="item">
       <div className="shadow-effect">
-        <img className="img-circle" src={img} alt={name} style={{ height: '250px', width: '250px' }} />
+        <img className="img-circle" src={img} alt={name} style={{ height: '300px', width: '280px' }} />
       </div>
-      <div className="testimonial-name">
-        <h1 style={{fontSize:"35px"}}>{name}</h1 >
-        <p style={{width:"1000px",textAlign:"center",marginLeft:"-370px"}}>{description}</p>
-      </div>
+      {/* <div className="testimonial-name">
+        <h1 >{name}</h1 >
+        <p >{description}</p>
+      </div> */}
     </div>
   );
 };
