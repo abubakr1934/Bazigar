@@ -1,8 +1,8 @@
 import React from 'react'
-
+import '../App.css'
 function Clock() {
   return (
-    <div class="container">           
+    <div class="container spacing">           
             <div class="data_security">
                 <div class="col-md-8">
                     <div class="text-center text-md-start mb-2 mb-md-0">

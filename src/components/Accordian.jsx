@@ -73,7 +73,7 @@ const faqItems = [
 
 function Accordion() {
     return (
-        <div className="container">
+        <div className="container spacing">
             <div className="section-title">
                 <h2 className="text-start">Frequently Asked Questions</h2>
                 <h3>Got a Question? We are here to answer!</h3>

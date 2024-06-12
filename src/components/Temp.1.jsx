@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css'
 import image1 from '../../public/assets/image11.png';
 import image2 from '../../public/assets/image22.png';
 import image3 from '../../public/assets/image33.png';
@@ -68,32 +69,33 @@ export function Temp() {
           </div>
         </div>
       </div>
-      <div className="carousel-container col-12 col-md-6 col-lg-7 text-center text-md-start" style={{maxWidth:"auto"}}>
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" style={{ width: "650px", height: "300px", borderRadius: "20px" }}>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={image1} className="d-block" alt="First slide" style={{ width: "650px", height: "300px", borderRadius: "10px" }} />
-            </div>
-            <div className="carousel-item">
-              <img src={image2} className="d-block" alt="Second slide" style={{ width: "650px", height: "300px", borderRadius: "10px" }} />
-            </div>
-            <div className="carousel-item">
-              <img src={image3} className="d-block" alt="Third slide" style={{ width: "650px", height: "300px", borderRadius: "10px" }} />
-            </div>
-            <div className="carousel-item">
-              <img src={image4} className="d-block" alt="Fourth slide" style={{ width: "650px", height: "300px", borderRadius: "10px" }} />
-            </div>
-          </div>
-          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </a>
-        </div>
+      <div className="carousel-container col-12 col-md-6 col-lg-7 text-center text-md-start">
+  <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+    <div className="carousel-inner">
+      <div className="carousel-item active">
+        <img src={image1} className="d-block w-100" alt="First slide" />
       </div>
+      <div className="carousel-item">
+        <img src={image2} className="d-block w-100" alt="Second slide" />
+      </div>
+      <div className="carousel-item">
+        <img src={image3} className="d-block w-100" alt="Third slide" />
+      </div>
+      <div className="carousel-item">
+        <img src={image4} className="d-block w-100" alt="Fourth slide" />
+      </div>
+    </div>
+    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Previous</span>
+    </a>
+    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
+
     </div>
   );
 }

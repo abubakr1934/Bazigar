@@ -60,31 +60,33 @@ function Testimonial({setInitialString}) {
           center: true,
           items: 3,
           margin: 0,
-          autoplay: true,
+          nav:true,
+          autoplay: false,
           dots: true,
-          autoplayTimeout: 8500,
-          smartSpeed: 450,
+          autoplayTimeout: 4500,
+          smartSpeed: 950,
           
           responsive: {
             0: {
               items: 1,
             },
             600: {
-              items: 3,
+              items: 2,
             },
             1000: {
-              items: 5,
+              items: 4,
             },
           },
         };
         return (
             <section id="testimonial" className="testimonials pt-70 pb-70">
+              <div className='container-fluid'>
               <div class="section-title">
                 <h2>Tournaments</h2>
             </div>
               
-                <div className="row">
-                  <div className="col-md-12">
+                <div  style={{maxWidth:"100%"}}>
+                  {/* <div className="col-md-12"> */}
                     <OwlCarousel
                       id="customer-testimonoals"
                       className="owl-carousel owl-theme"
@@ -117,9 +119,9 @@ function Testimonial({setInitialString}) {
                         })
                       )}
                     </OwlCarousel>
-                  </div>
+                  {/* </div> */}
                 </div>
-              
+              </div>
             </section>
           );
 }

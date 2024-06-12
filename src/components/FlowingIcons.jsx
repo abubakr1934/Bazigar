@@ -42,7 +42,7 @@ const iconData = [
 
 function FlowingIcons() {
   return (
-    <div className="container">
+    <div className="container spacing">
       <div className="heading section-title">
         <h2>
           <span>Why </span>

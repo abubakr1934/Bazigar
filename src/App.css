@@ -107,7 +107,8 @@ body, :root {
   opacity: 0.5;
   transform: scale3d(0.8, 0.8, 1);
   transition: all 0.3s ease-in-out;
-  cursor: pointer; /* Add cursor pointer for better UX */
+  cursor: pointer;
+  margin-bottom: 170px;
 }
 
 #customer-testimonoals .owl-item.active.center .item {
@@ -136,8 +137,27 @@ body, :root {
 
 .owl-item.active.center .testimonial-name {
   display: block;
+  
 }
-
+.testimonial-name {
+  display: none;
+  position: absolute;
+  left: -14rem;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: 700px;
+  top: 100%;
+  margin-top: 30px;
+}
+.testimonial-name p {
+  word-wrap: break-word;
+  word-break: break-all;
+  max-width: 700px;
+  min-width: 700px;
+  overflow: hidden;
+  white-space:normal;
+}
 .selected-testimonial-details {
   text-align: center;
   margin-top: 20px;
@@ -149,4 +169,58 @@ body, :root {
   text-align: center; /* Ensure the text is centered */
   padding: 10px; /* Add padding for better readability */
   box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.spacing{
+  margin-top:60px;
+}
+.footer-img {
+  margin-right: 8px; /* Adjust this value to increase or decrease spacing */
+}
+
+.bazi-footer-content img:last-child {
+  margin-right: 0; /* Remove the margin from the last image */
+}
+.carousel-container {
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-container .carousel {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .carousel-container .carousel {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-container .carousel {
+    max-width: 100%;
+  }
+  .owl-carousel .owl-item img{
+    width: 100% !important;
+  }
+  .testimonial-name{
+    width: auto;
+    position:unset;
+  }
+  .testimonial-name p {
+    max-width: auto;
+    min-width: auto;
+  }
+  #customer-testimonoals .item{
+    margin: 0 auto;
+  }
 }
